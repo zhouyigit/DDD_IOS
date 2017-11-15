@@ -34,6 +34,7 @@
 //    [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
     
     ViewController *vc = [[ViewController alloc] init];
+    vc.hidesBottomBarWhenPushed = NO;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -58,7 +59,6 @@
     [super initVCs];
     
     JoinedTableViewController *vc1 = [[JoinedTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    CGRect fff = CGRectMake(0, 0, CGRectGetWidth(self.scrollView.bounds), CGRectGetHeight(self.scrollView.bounds));
     vc1.view.frame = CGRectMake(0, 0, CGRectGetWidth(self.scrollView.bounds), CGRectGetHeight(self.scrollView.bounds));
     [self.vcs addObject:vc1];
     [self.scrollView addSubview:vc1.view];
