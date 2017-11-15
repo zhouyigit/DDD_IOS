@@ -16,10 +16,25 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"微信群";
+    self.title = @"TAB1";
     [self initVCs];
-    [self initTitleButtons:@[@"我参加的", @"我管理的"]];
-    [self initRightButton:@"添加" target:self sel:@selector(rightButtonAction)];
+    [self initTitleButtons:@[@"公共模型", @"我的模型"]];
+//    [self initRightButton:@"添加" target:self sel:@selector(rightButtonAction)];
+    [self initLeftButton:[UIImage imageWithColor:[UIColor blackColor] size:CGSizeMake(20, 20)] target:self sel:@selector(leftButtonAction)];
+}
+
+-(void)leftButtonAction
+{
+    CATransition* transition = [CATransition animation];
+    transition.duration = 3.0f;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    transition.type = kCATransitionPush;            //改变视图控制器出现的方式
+    transition.subtype = kCATransitionFromTop;     //出现的位置
+    
+//    [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
+    
+    ViewController *vc = [[ViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)rightButtonAction
@@ -43,6 +58,7 @@
     [super initVCs];
     
     JoinedTableViewController *vc1 = [[JoinedTableViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    CGRect fff = CGRectMake(0, 0, CGRectGetWidth(self.scrollView.bounds), CGRectGetHeight(self.scrollView.bounds));
     vc1.view.frame = CGRectMake(0, 0, CGRectGetWidth(self.scrollView.bounds), CGRectGetHeight(self.scrollView.bounds));
     [self.vcs addObject:vc1];
     [self.scrollView addSubview:vc1.view];

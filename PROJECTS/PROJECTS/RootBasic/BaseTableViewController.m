@@ -33,6 +33,11 @@
     [self.view addSubview:_tableView];
 }
 
+-(void)viewWillLayoutSubviews
+{
+    _tableView.frame = self.view.bounds;
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return _dataSource.count;

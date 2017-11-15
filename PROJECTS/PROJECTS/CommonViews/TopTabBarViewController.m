@@ -58,10 +58,19 @@
     [_top addSubview:button];
 }
 
+-(void)initLeftButton:(UIImage *)image target:(id)target sel:(SEL)sel
+{
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 20, 64, 44)];
+    [button setImage:image forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor redColor];
+    [button addTarget:target action:sel forControlEvents:UIControlEventTouchUpInside];
+    [_top addSubview:button];
+}
+
 -(void)initVCs
 {
     self.automaticallyAdjustsScrollViewInsets = NO;//scrollview偏移20
-    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-64-49)];
+    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-64)];
     _scrollView.pagingEnabled = YES;
     _scrollView.contentSize = CGSizeMake(2*CGRectGetWidth(_scrollView.bounds), 0);
     _scrollView.showsVerticalScrollIndicator = NO;

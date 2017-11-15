@@ -18,5 +18,6 @@
 -(void)initTitleButtons:(NSArray<NSString*>*)titles;
 -(void)initVCs;
 -(void)initRightButton:(NSString*)title target:(id)target sel:(SEL)sel;
+-(void)initLeftButton:(UIImage*)image target:(id)target sel:(SEL)sel;
 
 @end

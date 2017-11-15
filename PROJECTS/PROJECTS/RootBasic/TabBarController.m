@@ -34,18 +34,22 @@
 //    NavigationController *navc2 = [[NavigationController alloc] initWithRootViewController:vc2];
 //    [self addChildViewController:navc2];
     
-    ViewController *vc3 = [[ViewController alloc] init];
-    vc3.hidesBottomBarWhenPushed = NO;
-    vc3.view.backgroundColor = [UIColor yellowColor];
-    vc3.title = @"我";
-    NavigationController *navc3 = [[NavigationController alloc] initWithRootViewController:vc3];
-    [self addChildViewController:navc3];
+//    ViewController *vc3 = [[ViewController alloc] init];
+//    vc3.hidesBottomBarWhenPushed = NO;
+//    vc3.view.backgroundColor = [UIColor yellowColor];
+//    vc3.title = @"我";
+//    NavigationController *navc3 = [[NavigationController alloc] initWithRootViewController:vc3];
+//    [self addChildViewController:navc3];
     
-    MapViewController *vc4 = [[MapViewController alloc] init];
-    vc4.hidesBottomBarWhenPushed = NO;
-    vc4.title = @"地图";
-    NavigationController *navc4 = [[NavigationController alloc] initWithRootViewController:vc4];
-    [self addChildViewController:navc4];
+//    MapViewController *vc4 = [[MapViewController alloc] init];
+//    vc4.hidesBottomBarWhenPushed = NO;
+//    vc4.title = @"地图";
+//    NavigationController *navc4 = [[NavigationController alloc] initWithRootViewController:vc4];
+//    [self addChildViewController:navc4];
+    
+    if (self.childViewControllers.count == 1) {
+        self.tabBar.hidden = YES;
+    }
 }
 
 - (void)viewDidLoad {
