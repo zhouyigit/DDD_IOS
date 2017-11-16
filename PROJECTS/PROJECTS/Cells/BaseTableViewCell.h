@@ -11,6 +11,8 @@
 @property(strong, nonatomic) BaseModel *model;
 @property(strong, nonatomic) NSIndexPath *indexPath;
 
--(void)setModel:(BaseModel*)model atIndexPaht:(NSIndexPath*)indexPath;
+@property(strong, nonatomic) UIView *line;
+
+-(void)setModel:(BaseModel*)model atIndexPath:(NSIndexPath*)indexPath;
 
 @end

@@ -26,6 +26,14 @@
 #define StringFromFloat4(__C1__) [NSString stringWithFormat:@"%.4f",__C1__]
 /** 空字符串 **/
 #define StringIsEmpty(__C1__) ((!__C1__) || ([@"" isEqualToString:__C1__]))
+/** 空数组 **/
+#define ArrayIsEmpty(__C1__) (__C1__ == nil || __C1__.count == 0)
+/** 版本字符串 **/
+#define VersionString [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
+/** 调试用颜色 **/
+#define DebugColor [UIColor redColor]
+/** 调试用颜色 **/
+#define DebugColorOrange [UIColor orangeColor]
 
 #import "UIImage+Color.h"
 #import "UIColor+Hex.h"

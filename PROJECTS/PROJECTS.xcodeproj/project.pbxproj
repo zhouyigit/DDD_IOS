@@ -27,6 +27,10 @@
 		9E36A2541F5D4CD2009BF875 /* WellBeingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E36A2531F5D4CD2009BF875 /* WellBeingCell.m */; };
 		9E386CD91F67887B00E97EAE /* Thirds.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E386CD81F67887B00E97EAE /* Thirds.m */; };
 		9E45D78B1F8DC645007E2F6D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E45D78A1F8DC645007E2F6D /* MapViewController.m */; };
+		9E7345911FBD6D1300EF9C17 /* D3ModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7345901FBD6D1300EF9C17 /* D3ModelCell.m */; };
+		9E7345941FBD6DED00EF9C17 /* D3ModelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7345931FBD6DED00EF9C17 /* D3ModelModel.m */; };
+		9E7345971FBD832500EF9C17 /* D3ModelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7345961FBD832500EF9C17 /* D3ModelTableViewController.m */; };
+		9E73459B1FBD8D9900EF9C17 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E73459A1FBD8D9900EF9C17 /* GuideViewController.m */; };
 		9E850BD91F57AB610004332E /* ColorConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BD81F57AB610004332E /* ColorConsts.m */; };
 		9E850BDC1F57ACD40004332E /* MeasureConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BDB1F57ACD40004332E /* MeasureConsts.m */; };
 		9E850BE31F57EA7A0004332E /* BaseNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E850BE21F57EA7A0004332E /* BaseNetwork.m */; };
@@ -110,6 +114,14 @@
 		9E386CD81F67887B00E97EAE /* Thirds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thirds.m; sourceTree = "<group>"; };
 		9E45D7891F8DC645007E2F6D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		9E45D78A1F8DC645007E2F6D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		9E73458F1FBD6D1300EF9C17 /* D3ModelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D3ModelCell.h; sourceTree = "<group>"; };
+		9E7345901FBD6D1300EF9C17 /* D3ModelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D3ModelCell.m; sourceTree = "<group>"; };
+		9E7345921FBD6DED00EF9C17 /* D3ModelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D3ModelModel.h; sourceTree = "<group>"; };
+		9E7345931FBD6DED00EF9C17 /* D3ModelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D3ModelModel.m; sourceTree = "<group>"; };
+		9E7345951FBD832500EF9C17 /* D3ModelTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D3ModelTableViewController.h; sourceTree = "<group>"; };
+		9E7345961FBD832500EF9C17 /* D3ModelTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D3ModelTableViewController.m; sourceTree = "<group>"; };
+		9E7345991FBD8D9900EF9C17 /* GuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		9E73459A1FBD8D9900EF9C17 /* GuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 		9E850BD71F57AB610004332E /* ColorConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorConsts.h; sourceTree = "<group>"; };
 		9E850BD81F57AB610004332E /* ColorConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorConsts.m; sourceTree = "<group>"; };
 		9E850BDA1F57ACD40004332E /* MeasureConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasureConsts.h; sourceTree = "<group>"; };
@@ -213,6 +225,8 @@
 			children = (
 				9E0197D01F666A9F0064343B /* WechatGroupViewController.h */,
 				9E0197D11F666A9F0064343B /* WechatGroupViewController.m */,
+				9E7345951FBD832500EF9C17 /* D3ModelTableViewController.h */,
+				9E7345961FBD832500EF9C17 /* D3ModelTableViewController.m */,
 				9E0197D61F6678910064343B /* JoinedTableViewController.h */,
 				9E0197D71F6678910064343B /* JoinedTableViewController.m */,
 				9E0197D91F667C1D0064343B /* ManagedTableViewController.h */,
@@ -267,6 +281,8 @@
 				9E36A24B1F5D47E3009BF875 /* WellBeingModel.m */,
 				9E0197DC1F6682AB0064343B /* WxGroupModel.h */,
 				9E0197DD1F6682AB0064343B /* WxGroupModel.m */,
+				9E7345921FBD6DED00EF9C17 /* D3ModelModel.h */,
+				9E7345931FBD6DED00EF9C17 /* D3ModelModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -279,6 +295,8 @@
 				9E36A2501F5D4C93009BF875 /* BaseTableViewCell.m */,
 				9E36A2521F5D4CD2009BF875 /* WellBeingCell.h */,
 				9E36A2531F5D4CD2009BF875 /* WellBeingCell.m */,
+				9E73458F1FBD6D1300EF9C17 /* D3ModelCell.h */,
+				9E7345901FBD6D1300EF9C17 /* D3ModelCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -299,6 +317,15 @@
 				9E45D78A1F8DC645007E2F6D /* MapViewController.m */,
 			);
 			path = GaoDeMap;
+			sourceTree = "<group>";
+		};
+		9E7345981FBD8D4A00EF9C17 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				9E7345991FBD8D9900EF9C17 /* GuideViewController.h */,
+				9E73459A1FBD8D9900EF9C17 /* GuideViewController.m */,
+			);
+			path = Guide;
 			sourceTree = "<group>";
 		};
 		9E850BDD1F57E4FE0004332E /* Networks */ = {
@@ -341,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				9EDA43571F67845D00613A15 /* PROJECTS.entitlements */,
+				9E7345981FBD8D4A00EF9C17 /* Guide */,
 				9E45D7881F8DC5EE007E2F6D /* GaoDeMap */,
 				9E36A24D1F5D4C47009BF875 /* Cells */,
 				9E36A2451F5D38C2009BF875 /* Models */,
@@ -661,8 +689,12 @@
 				9EC258F71F568A430078F554 /* BaseViewController.m in Sources */,
 				9EC258F11F56861F0078F554 /* NavigationController.m in Sources */,
 				9E0197C81F663CC10064343B /* TopTabBarViewController.m in Sources */,
+				9E73459B1FBD8D9900EF9C17 /* GuideViewController.m in Sources */,
 				9E0197D21F666A9F0064343B /* WechatGroupViewController.m in Sources */,
+				9E7345971FBD832500EF9C17 /* D3ModelTableViewController.m in Sources */,
+				9E7345911FBD6D1300EF9C17 /* D3ModelCell.m in Sources */,
 				9EC259051F56AFDD0078F554 /* UIColor+Hex.m in Sources */,
+				9E7345941FBD6DED00EF9C17 /* D3ModelModel.m in Sources */,
 				9EC258BC1F565F250078F554 /* AppDelegate.m in Sources */,
 				9EC258B91F565F250078F554 /* main.m in Sources */,
 			);

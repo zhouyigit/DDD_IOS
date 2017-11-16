@@ -29,9 +29,9 @@
     return self;
 }
 
--(void)setModel:(BaseModel *)model atIndexPaht:(NSIndexPath *)indexPath
+-(void)setModel:(BaseModel *)model atIndexPath:(NSIndexPath *)indexPath
 {
-    [super setModel:model atIndexPaht:indexPath];
+    [super setModel:model atIndexPath:indexPath];
     
     __block WellBeingCell *weak = self;
     [_IV sd_setImageWithURL:[NSURL URLWithString:((WellBeingModel*)self.model).url] placeholderImage:[UIImage imageWithHexColor:0xeeeeee] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {

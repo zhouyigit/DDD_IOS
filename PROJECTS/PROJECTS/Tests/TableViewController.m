@@ -57,7 +57,7 @@
     WellBeingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.delegate = self;
     WellBeingModel *model = _dataSource[indexPath.row];
-    [cell setModel:model atIndexPaht:indexPath];
+    [cell setModel:model atIndexPath:indexPath];
     return cell;
 }
 

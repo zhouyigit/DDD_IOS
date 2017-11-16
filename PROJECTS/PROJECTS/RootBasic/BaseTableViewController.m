@@ -31,6 +31,7 @@
     _tableView.estimatedSectionHeaderHeight = 0;//ios11激活heightForHeaderInSection
     _tableView.estimatedRowHeight = 44;//默认44，子类中覆盖
     _tableView.estimatedSectionFooterHeight = 0;//ios11激活heightForFooterInSection
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.view addSubview:_tableView];
 }

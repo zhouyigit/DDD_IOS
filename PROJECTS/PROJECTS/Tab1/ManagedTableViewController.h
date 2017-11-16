@@ -4,8 +4,8 @@
 //
 //
 
-#import "RefreshTableViewController.h"
+#import "D3ModelTableViewController.h"
 
-@interface ManagedTableViewController : RefreshTableViewController
+@interface ManagedTableViewController : D3ModelTableViewController
 
 @end

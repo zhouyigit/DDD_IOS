@@ -30,7 +30,7 @@
     
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 200, 100, 200)];
     imageView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"victory"]];
-    UIImage *image = [UIImage imageWithColor:[UIColor redColor]];
+    UIImage *image = [UIImage imageWithColor:DebugColor];
 //    UIImage *image = [UIImage imageNamed:@"victory"];
     imageView.image = image;
 //    imageView.contentMode = UIViewContentModeCenter;
@@ -42,7 +42,7 @@
     [wellBeing addTarget:self action:@selector(wellBeing) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:wellBeing];
     [wellBeing mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(push.mas_right).offset(msLeftRightMargin);
+        make.left.equalTo(push.mas_right).offset(msHMargin);
         make.top.equalTo(imageView.mas_bottom);
         make.width.offset(200);
         make.height.offset(44);
@@ -54,7 +54,7 @@
     [localTest addTarget:self action:@selector(localTest) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:localTest];
     [localTest mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(push.mas_right).offset(msLeftRightMargin);
+        make.left.equalTo(push.mas_right).offset(msHMargin);
         make.bottom.offset(-100);
         make.width.offset(100);
         make.height.offset(44);

@@ -31,7 +31,7 @@
         button.tag = i;
         [button setTitle:titles[i] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
+        [button setTitleColor:DebugColor forState:UIControlStateSelected];
         [button addTarget:self action:@selector(titleButtonDidClicked:) forControlEvents:UIControlEventTouchUpInside];
         if (i == 0) {
             [button setSelected:YES];
@@ -62,7 +62,7 @@
 {
     UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 20, 64, 44)];
     [button setImage:image forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor redColor];
+    button.backgroundColor = DebugColor;
     [button addTarget:target action:sel forControlEvents:UIControlEventTouchUpInside];
     [_top addSubview:button];
 }

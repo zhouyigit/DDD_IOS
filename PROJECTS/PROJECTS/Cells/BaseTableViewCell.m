@@ -19,7 +19,22 @@
     // Configure the view for the selected state
 }
 
--(void)setModel:(BaseModel *)model atIndexPaht:(NSIndexPath *)indexPath
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        _line = [[UIView alloc] init];
+        _line.backgroundColor = [UIColor orangeColor];
+        [self.contentView addSubview:_line];
+        [_line mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.bottom.equalTo(self.contentView);
+            make.height.offset(OnePX);
+        }];
+    }
+    return self;
+}
+
+-(void)setModel:(BaseModel *)model atIndexPath:(NSIndexPath *)indexPath
 {
     _model = model;
     _indexPath = indexPath;

@@ -7,7 +7,7 @@
 #ifndef Cells_h
 #define Cells_h
 
-#import "BaseTableViewCell.h"
-#import "WellBeingCell.h"
+#import "WellBeingCell.h"//福利
+#import "D3ModelCell.h"//3D模型
 
 #endif /* Cells_h */

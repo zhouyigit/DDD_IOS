@@ -5,6 +5,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GuideViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

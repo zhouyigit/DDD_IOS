@@ -44,11 +44,11 @@
         _rightItem.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10);
         [_rightItem setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
 //        _rightItem.titleEdgeInsets = UIEdgeInsetsZero;
-//        [_rightItem setImage:[UIImage jf_imageWithColor:[UIColor redColor] andSize:CGSizeMake(24, 24)] forState:UIControlStateNormal];
+//        [_rightItem setImage:[UIImage jf_imageWithColor:DebugColor andSize:CGSizeMake(24, 24)] forState:UIControlStateNormal];
         [self addSubview:_rightItem];
         
         _rightBadge = [[UILabel alloc] initWithFrame:CGRectMake(34, 0, 10, 10)];
-        _rightBadge.backgroundColor = [UIColor redColor];
+        _rightBadge.backgroundColor = DebugColor;
         _rightBadge.textColor = [UIColor whiteColor];
         _rightBadge.font = [UIFont systemFontOfSize:12];
         _rightBadge.textAlignment = NSTextAlignmentCenter;
@@ -58,7 +58,7 @@
         [_rightItem addSubview:_rightBadge];
         
         _lineView = [[UIView alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(frame)-OnePX, width, OnePX)];
-        _lineView.backgroundColor = [UIColor redColor];
+        _lineView.backgroundColor = DebugColor;
         [self addSubview:_lineView];
         
         _titleImageV = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 135, 27.5)];

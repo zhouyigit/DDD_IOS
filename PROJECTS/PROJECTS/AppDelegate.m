@@ -20,10 +20,16 @@
     //先配置第三方
     [[Thirds shareInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
-    TabBarController *tabc = [[TabBarController alloc] init];
-    [tabc setSelectedIndex:2];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = tabc;
+    
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:KEY_NeverShowGuide]) {
+        TabBarController *tabc = [[TabBarController alloc] init];
+        self.window.rootViewController = tabc;
+    } else {
+        GuideViewController *guidevc = [[GuideViewController alloc] init];
+        self.window.rootViewController = guidevc;
+    }
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
