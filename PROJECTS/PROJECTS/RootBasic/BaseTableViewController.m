@@ -25,7 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:_style];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:_style];
     _tableView.dataSource = self;
     _tableView.delegate = self;
     _tableView.estimatedSectionHeaderHeight = 0;//ios11激活heightForHeaderInSection
@@ -33,12 +33,25 @@
     _tableView.estimatedSectionFooterHeight = 0;//ios11激活heightForFooterInSection
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-    [self.view addSubview:_tableView];
+    
+    if (self.navBar) {
+        [self.view insertSubview:_tableView belowSubview:self.navBar];
+    } else {
+        [self.view addSubview:_tableView];
+    }
 }
 
 -(void)viewWillLayoutSubviews
 {
-    _tableView.frame = self.view.bounds;
+    CGRect frame = self.view.bounds;
+    NSString *className = [NSString stringWithFormat:@"%@", [self class]];
+    if ([className isEqualToString:@"JoinedTableViewController"] || [className isEqualToString:@"ManagedTableViewController"]) {
+        self.navBar.hidden = YES;
+    } else {
+        frame.origin.y = msNavHeight;
+        frame.size.height = CGRectGetHeight(frame)-msNavHeight;
+    }
+    _tableView.frame = frame;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4DF1A823BBD9D31C6631B5F1 /* libPods-PROJECTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 950D2F99677C88AC4CC065BD /* libPods-PROJECTS.a */; };
+		5AE9F84B1FBDD0DB00CA3E45 /* ImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9F84A1FBDD0DB00CA3E45 /* ImageBrowser.m */; };
+		5AE9F84E1FBDD6E300CA3E45 /* ImagesBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9F84D1FBDD6E300CA3E45 /* ImagesBrowser.m */; };
+		5AE9F8511FBDDA1800CA3E45 /* D3DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9F8501FBDDA1800CA3E45 /* D3DetailTableViewController.m */; };
 		9E0197C81F663CC10064343B /* TopTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197C71F663CC10064343B /* TopTabBarViewController.m */; };
 		9E0197CE1F6667BC0064343B /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197CD1F6667BC0064343B /* BaseTableViewController.m */; };
 		9E0197D21F666A9F0064343B /* WechatGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197D11F666A9F0064343B /* WechatGroupViewController.m */; };
@@ -70,6 +73,12 @@
 /* Begin PBXFileReference section */
 		146634C452E7D762B9BD57B3 /* Pods-PROJECTS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJECTS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PROJECTS/Pods-PROJECTS.debug.xcconfig"; sourceTree = "<group>"; };
 		4D3D4E91FD5E1A4C5B178941 /* Pods-PROJECTS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJECTS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PROJECTS/Pods-PROJECTS.release.xcconfig"; sourceTree = "<group>"; };
+		5AE9F8491FBDD0DB00CA3E45 /* ImageBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageBrowser.h; sourceTree = "<group>"; };
+		5AE9F84A1FBDD0DB00CA3E45 /* ImageBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageBrowser.m; sourceTree = "<group>"; };
+		5AE9F84C1FBDD6E300CA3E45 /* ImagesBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagesBrowser.h; sourceTree = "<group>"; };
+		5AE9F84D1FBDD6E300CA3E45 /* ImagesBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagesBrowser.m; sourceTree = "<group>"; };
+		5AE9F84F1FBDDA1800CA3E45 /* D3DetailTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D3DetailTableViewController.h; sourceTree = "<group>"; };
+		5AE9F8501FBDDA1800CA3E45 /* D3DetailTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D3DetailTableViewController.m; sourceTree = "<group>"; };
 		950D2F99677C88AC4CC065BD /* libPods-PROJECTS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PROJECTS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E0197C51F6637D00064343B /* CommonViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViews.h; sourceTree = "<group>"; };
 		9E0197C61F663CC10064343B /* TopTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTabBarViewController.h; sourceTree = "<group>"; };
@@ -212,6 +221,10 @@
 			isa = PBXGroup;
 			children = (
 				9E0197C51F6637D00064343B /* CommonViews.h */,
+				5AE9F8491FBDD0DB00CA3E45 /* ImageBrowser.h */,
+				5AE9F84A1FBDD0DB00CA3E45 /* ImageBrowser.m */,
+				5AE9F84C1FBDD6E300CA3E45 /* ImagesBrowser.h */,
+				5AE9F84D1FBDD6E300CA3E45 /* ImagesBrowser.m */,
 				9E0197C61F663CC10064343B /* TopTabBarViewController.h */,
 				9E0197C71F663CC10064343B /* TopTabBarViewController.m */,
 				9E0197D31F6677830064343B /* RefreshTableViewController.h */,
@@ -231,6 +244,8 @@
 				9E0197D71F6678910064343B /* JoinedTableViewController.m */,
 				9E0197D91F667C1D0064343B /* ManagedTableViewController.h */,
 				9E0197DA1F667C1D0064343B /* ManagedTableViewController.m */,
+				5AE9F84F1FBDDA1800CA3E45 /* D3DetailTableViewController.h */,
+				5AE9F8501FBDDA1800CA3E45 /* D3DetailTableViewController.m */,
 			);
 			path = Tab1;
 			sourceTree = "<group>";
@@ -661,9 +676,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E850BDC1F57ACD40004332E /* MeasureConsts.m in Sources */,
+				5AE9F8511FBDDA1800CA3E45 /* D3DetailTableViewController.m in Sources */,
 				9E850BD91F57AB610004332E /* ColorConsts.m in Sources */,
 				9E850BE61F57EB4A0004332E /* NetworkManager.m in Sources */,
 				9E36A2491F5D4677009BF875 /* BaseModel.m in Sources */,
+				5AE9F84B1FBDD0DB00CA3E45 /* ImageBrowser.m in Sources */,
 				9E36A2511F5D4C93009BF875 /* BaseTableViewCell.m in Sources */,
 				9EC258FA1F568BEA0078F554 /* ViewController.m in Sources */,
 				9E0197DE1F6682AB0064343B /* WxGroupModel.m in Sources */,
@@ -676,6 +693,7 @@
 				9E36A2541F5D4CD2009BF875 /* WellBeingCell.m in Sources */,
 				9E850BE91F57F3E20004332E /* TestNetwork.m in Sources */,
 				9EE0302B1F6263490026C224 /* NavigationBar.m in Sources */,
+				5AE9F84E1FBDD6E300CA3E45 /* ImagesBrowser.m in Sources */,
 				9E0197CE1F6667BC0064343B /* BaseTableViewController.m in Sources */,
 				9E386CD91F67887B00E97EAE /* Thirds.m in Sources */,
 				9E36A2431F5D27B2009BF875 /* TableViewController.m in Sources */,

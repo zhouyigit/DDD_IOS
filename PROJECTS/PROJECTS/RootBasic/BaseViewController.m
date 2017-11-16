@@ -22,7 +22,7 @@
         self.tasks = [[NSMutableDictionary alloc] initWithCapacity:0];
         
         //vc展现时，隐藏tabbar
-        self.hidesBottomBarWhenPushed = YES;
+        self.hidesBottomBarWhenPushed = NO;
         
     }
     return self;
@@ -34,6 +34,10 @@
     
     //设置背景色，该方法如果放在init方法中，会触发viewDidLoad方法
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    _navBar = [[NavigationBar alloc] initWithFrame:CGRectMake(0, 0, WIDTH, msNavHeight)];
+    [self.view addSubview:_navBar];
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated

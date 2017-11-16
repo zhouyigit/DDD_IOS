@@ -7,6 +7,7 @@
 //
 
 #import "RefreshTableViewController.h"
+#import "D3DetailTableViewController.h"
 
 @interface D3ModelTableViewController : RefreshTableViewController
 

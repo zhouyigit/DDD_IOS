@@ -43,6 +43,14 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (!ArrayIsEmpty(self.dataSource)) {
+        //
+    } else {
+        D3ModelModel *model = [self.dataSource objectAtIndex:indexPath.row];
+        D3DetailTableViewController *detailvc = [[D3DetailTableViewController alloc] initWithModel:model];
+//        detailvc.hidesBottomBarWhenPushed = NO;
+        [NavC pushViewController:detailvc animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

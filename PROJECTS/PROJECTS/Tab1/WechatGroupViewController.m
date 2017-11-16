@@ -34,7 +34,7 @@
 //    [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
     
     ViewController *vc = [[ViewController alloc] init];
-    vc.hidesBottomBarWhenPushed = NO;
+//    vc.hidesBottomBarWhenPushed = NO;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

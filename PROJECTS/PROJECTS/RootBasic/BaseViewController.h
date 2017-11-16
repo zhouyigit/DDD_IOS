@@ -5,8 +5,11 @@
 //所有可视ViewController的基类，编码基本布局和样式
 
 #import <UIKit/UIKit.h>
+#import "NavigationBar.h"
 
 @interface BaseViewController : UIViewController
+
+@property(strong, nonatomic) NavigationBar *navBar;
 
 @property(strong, nonatomic) NSString *umengPage;
 
