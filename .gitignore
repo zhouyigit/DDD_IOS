@@ -6,6 +6,7 @@
 */build/*
 xcuserdata
 DerivedData
+*.lock
 
 ## Build generated
 build/
