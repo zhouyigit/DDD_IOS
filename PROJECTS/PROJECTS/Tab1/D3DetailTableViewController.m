@@ -41,7 +41,12 @@
 
 -(void)rightItemAction
 {
-    
+    if ([NSUD isLogin]) {
+        //
+    } else {
+        LoginViewController *loginvc = [[LoginViewController alloc] init];
+        [self.navigationController pushViewController:loginvc animated:YES];
+    }
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section

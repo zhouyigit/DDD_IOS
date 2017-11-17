@@ -9,5 +9,10 @@
 #import "BaseViewController.h"
 
 @interface LoginViewController : BaseViewController
+{
+    UITextField *_userTF;
+    UITextField *_passwordTF;
+    UIButton *_loginButton;
+}
 
 @end

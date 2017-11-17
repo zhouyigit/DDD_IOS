@@ -7,6 +7,7 @@
 //
 
 #import "BaseTableViewController.h"
+#import "LoginViewController.h"
 
 @interface D3DetailTableViewController : BaseTableViewController
 {
