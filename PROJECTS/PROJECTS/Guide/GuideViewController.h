@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define KEY_NeverShowGuide [NSString stringWithFormat:@"NeverShowGuideForVersion%@", VersionString]
-
 @interface GuideViewController : UIViewController
 
 @end

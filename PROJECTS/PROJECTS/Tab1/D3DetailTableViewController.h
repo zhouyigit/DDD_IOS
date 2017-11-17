@@ -11,6 +11,7 @@
 @interface D3DetailTableViewController : BaseTableViewController
 {
     ImagesBrowser *_browser;
+    D3ModelModel *_model;
 }
 
 -(instancetype)initWithModel:(D3ModelModel*)model;

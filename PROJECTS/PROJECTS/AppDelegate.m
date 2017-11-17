@@ -22,7 +22,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:KEY_NeverShowGuide]) {
+    if ([NSUD neverShowGuide]) {
         TabBarController *tabc = [[TabBarController alloc] init];
         self.window.rootViewController = tabc;
     } else {

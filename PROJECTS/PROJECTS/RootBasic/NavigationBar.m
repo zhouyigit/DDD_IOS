@@ -35,7 +35,9 @@
         _leftItem = [[UIButton alloc] initWithFrame:CGRectMake(0, y, height, height)];
 //        _leftItem.backgroundColor = [UIColor greenColor];
         _leftItem.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10);
-        [_leftItem setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+//        [_leftItem setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
+        [_leftItem setTitle:@"返回" forState:UIControlStateNormal];
+        [_leftItem setTitleColor:DebugColor forState:UIControlStateNormal];
         [_leftItem addTarget:self action:@selector(goback) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_leftItem];
         

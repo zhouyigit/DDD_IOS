@@ -57,8 +57,7 @@
     TabBarController *tabc = [[TabBarController alloc] init];
     [UIApplication sharedApplication].keyWindow.rootViewController = tabc;
     
-    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:KEY_NeverShowGuide];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    [NSUD setNeverShowGuide:YES];
 }
 
 -(void)dealloc

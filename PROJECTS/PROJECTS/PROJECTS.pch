@@ -13,6 +13,7 @@
 /** 自定义集合 */
 #import "Tools.h"//自定义工具类集合
 #import "CommonViews.h"//自定义控件集合
+#import "Accessories.h"//自定义配件集合
 #import "Consts.h"
 #import "Networks.h"
 #import "DBWorks.h"

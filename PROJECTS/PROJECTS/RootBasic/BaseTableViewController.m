@@ -25,12 +25,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
     _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:_style];
     _tableView.dataSource = self;
     _tableView.delegate = self;
     _tableView.estimatedSectionHeaderHeight = 0;//ios11激活heightForHeaderInSection
+    _tableView.sectionHeaderHeight = 0;
     _tableView.estimatedRowHeight = 44;//默认44，子类中覆盖
     _tableView.estimatedSectionFooterHeight = 0;//ios11激活heightForFooterInSection
+    _tableView.sectionFooterHeight = 0;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     

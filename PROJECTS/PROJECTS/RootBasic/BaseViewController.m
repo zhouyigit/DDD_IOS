@@ -28,6 +28,12 @@
     return self;
 }
 
+-(void)setTitle:(NSString *)title
+{
+    [super setTitle:title];
+    [_navBar setTitle:title];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

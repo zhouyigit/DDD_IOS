@@ -35,6 +35,7 @@
 /** 调试用颜色 **/
 #define DebugColorOrange [UIColor orangeColor]
 
+#import "NSUD.h"
 #import "UIImage+Color.h"
 #import "UIColor+Hex.h"
 

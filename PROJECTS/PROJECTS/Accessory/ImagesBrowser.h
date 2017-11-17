@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "ImageBrowser.h"
 
-@interface ImagesBrowser : UIScrollView
+@interface ImagesBrowser : UIView<UIScrollViewDelegate>
+{
+    UIScrollView *_scrollView;
+    UIPageControl *_pageControl;
+}
 
 -(void)setImages:(NSArray<NSString*>*)images;
 
