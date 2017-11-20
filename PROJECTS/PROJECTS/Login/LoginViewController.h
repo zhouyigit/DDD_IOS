@@ -7,11 +7,13 @@
 //
 
 #import "BaseViewController.h"
+#import "RegisterViewController.h"
+#import "ForgetPasswordViewController.h"
 
 @interface LoginViewController : BaseViewController
 {
-    UITextField *_userTF;
-    UITextField *_passwordTF;
+    LabelTextField *_username;
+    LabelTextField *_password;
     UIButton *_loginButton;
 }
 

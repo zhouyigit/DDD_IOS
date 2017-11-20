@@ -41,6 +41,9 @@
     //设置背景色，该方法如果放在init方法中，会触发viewDidLoad方法
     self.view.backgroundColor = [UIColor whiteColor];
     
+    _contentView = [[UIView alloc] initWithFrame:CGRectMake(0, msNavHeight, WIDTH, HEIGHT-msNavHeight)];
+    [self.view addSubview:_contentView];
+    
     _navBar = [[NavigationBar alloc] initWithFrame:CGRectMake(0, 0, WIDTH, msNavHeight)];
     [self.view addSubview:_navBar];
     

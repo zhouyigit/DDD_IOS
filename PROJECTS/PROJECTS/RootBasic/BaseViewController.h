@@ -10,6 +10,7 @@
 @interface BaseViewController : UIViewController
 
 @property(strong, nonatomic) NavigationBar *navBar;
+@property(strong, nonatomic) UIView *contentView;
 
 @property(strong, nonatomic) NSString *umengPage;
 
