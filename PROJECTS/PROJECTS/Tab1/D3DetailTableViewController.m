@@ -42,7 +42,8 @@
 -(void)rightItemAction
 {
     if ([NSUD isLogin]) {
-        //
+        OrderBuilderViewController *vc = [[OrderBuilderViewController alloc] initWithStyle:UITableViewStyleGrouped];
+        [self.navigationController pushViewController:vc animated:YES];
     } else {
         LoginViewController *loginvc = [[LoginViewController alloc] init];
         [self.navigationController pushViewController:loginvc animated:YES];

@@ -109,11 +109,26 @@
                 //网络事务被取消
             }
         }
+        [NSUD setIsLogin:YES];//forDebug
+        [weak popToFunctionViewController];//forDebug
         [weak deleteTask:task];
         //        [MBProgressHUD hideHUDForView:weak.view animated:NO];
         [hud hideAnimated:NO];
     }];
     [self saveTask:task];
+}
+
+-(void)popToFunctionViewController
+{
+    NSMutableArray *vcs = [NSMutableArray arrayWithArray:self.navigationController.viewControllers];
+    for (id vc in vcs) {
+        if ([vc isKindOfClass:[LoginViewController class]]) {
+            [vcs removeObject:vc];
+            break;
+        }
+    }
+    self.navigationController.viewControllers = vcs;
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(void)sendVerifyCode

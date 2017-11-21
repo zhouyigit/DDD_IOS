@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4DF1A823BBD9D31C6631B5F1 /* libPods-PROJECTS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 950D2F99677C88AC4CC065BD /* libPods-PROJECTS.a */; };
 		5AE9F8511FBDDA1800CA3E45 /* D3DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9F8501FBDDA1800CA3E45 /* D3DetailTableViewController.m */; };
+		5AE9F8541FC4783000CA3E45 /* OrderBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE9F8531FC4783000CA3E45 /* OrderBuilderViewController.m */; };
 		9E0197C81F663CC10064343B /* TopTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197C71F663CC10064343B /* TopTabBarViewController.m */; };
 		9E0197CE1F6667BC0064343B /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197CD1F6667BC0064343B /* BaseTableViewController.m */; };
 		9E0197D21F666A9F0064343B /* WechatGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0197D11F666A9F0064343B /* WechatGroupViewController.m */; };
@@ -84,6 +85,8 @@
 		4D3D4E91FD5E1A4C5B178941 /* Pods-PROJECTS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJECTS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PROJECTS/Pods-PROJECTS.release.xcconfig"; sourceTree = "<group>"; };
 		5AE9F84F1FBDDA1800CA3E45 /* D3DetailTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D3DetailTableViewController.h; sourceTree = "<group>"; };
 		5AE9F8501FBDDA1800CA3E45 /* D3DetailTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D3DetailTableViewController.m; sourceTree = "<group>"; };
+		5AE9F8521FC4783000CA3E45 /* OrderBuilderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderBuilderViewController.h; sourceTree = "<group>"; };
+		5AE9F8531FC4783000CA3E45 /* OrderBuilderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderBuilderViewController.m; sourceTree = "<group>"; };
 		950D2F99677C88AC4CC065BD /* libPods-PROJECTS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PROJECTS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E0197C51F6637D00064343B /* CommonViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViews.h; sourceTree = "<group>"; };
 		9E0197C61F663CC10064343B /* TopTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopTabBarViewController.h; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 				9E0197DA1F667C1D0064343B /* ManagedTableViewController.m */,
 				5AE9F84F1FBDDA1800CA3E45 /* D3DetailTableViewController.h */,
 				5AE9F8501FBDDA1800CA3E45 /* D3DetailTableViewController.m */,
+				5AE9F8521FC4783000CA3E45 /* OrderBuilderViewController.h */,
+				5AE9F8531FC4783000CA3E45 /* OrderBuilderViewController.m */,
 			);
 			path = Tab1;
 			sourceTree = "<group>";
@@ -753,6 +758,7 @@
 				9E53F8D81FC2867C00FD1021 /* RegisterViewController.m in Sources */,
 				9E36A24C1F5D47E3009BF875 /* WellBeingModel.m in Sources */,
 				9E0197EF1F668AD80064343B /* WxGroupSqlWork.m in Sources */,
+				5AE9F8541FC4783000CA3E45 /* OrderBuilderViewController.m in Sources */,
 				9E88F11C1FBED21200026273 /* ImageBrowser.m in Sources */,
 				9E88F11D1FBED21200026273 /* ImagesBrowser.m in Sources */,
 				9E0197D51F6677830064343B /* RefreshTableViewController.m in Sources */,

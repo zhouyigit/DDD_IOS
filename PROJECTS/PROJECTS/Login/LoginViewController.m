@@ -103,6 +103,8 @@
                 //网络事务被取消
             }
         }
+        [NSUD setIsLogin:YES];//forDebug
+        [weak.navigationController popViewControllerAnimated:YES];//forDebug
         [weak deleteTask:task];
         //        [MBProgressHUD hideHUDForView:weak.view animated:NO];
         [hud hideAnimated:NO];

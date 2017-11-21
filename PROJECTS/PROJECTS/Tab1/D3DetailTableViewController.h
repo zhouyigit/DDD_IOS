@@ -8,6 +8,7 @@
 
 #import "BaseTableViewController.h"
 #import "LoginViewController.h"
+#import "OrderBuilderViewController.h"
 
 @interface D3DetailTableViewController : BaseTableViewController
 {
