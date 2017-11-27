@@ -16,4 +16,7 @@
 
 -(instancetype)initWithStyle:(UITableViewStyle)style;
 
+/** 自定义的 有个别cell时,用于tableView:cellForRowAtIndexPath:中,返回一般cell **/
+-(UITableViewCell *)cellForRowAtIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView;
+
 @end

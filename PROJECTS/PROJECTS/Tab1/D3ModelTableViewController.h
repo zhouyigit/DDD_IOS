@@ -11,6 +11,4 @@
 
 @interface D3ModelTableViewController : RefreshTableViewController
 
--(UITableViewCell *)cellForRowAtIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView;
-
 @end

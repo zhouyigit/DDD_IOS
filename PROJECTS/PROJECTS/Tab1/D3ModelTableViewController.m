@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.tableView.estimatedRowHeight = 44;
-    [self.tableView registerClass:[D3ModelCell class] forCellReuseIdentifier:@"D3ModelCell"];
+    [self.tableView registerClass:[D3ModelCell class] forCellReuseIdentifier:D3ModelCellIdentifier];
     
 //    self.dataSource = [WxGroupSqlWork getManagedGroups];
 }
@@ -35,7 +35,7 @@
 
 -(UITableViewCell *)cellForRowAtIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView
 {
-    D3ModelCell *cell = [tableView dequeueReusableCellWithIdentifier:@"D3ModelCell" forIndexPath:indexPath];
+    D3ModelCell *cell = [tableView dequeueReusableCellWithIdentifier:D3ModelCellIdentifier forIndexPath:indexPath];
     [cell setModel:nil atIndexPath:indexPath];
     return cell;
 }

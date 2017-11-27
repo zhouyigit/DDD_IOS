@@ -9,6 +9,7 @@
 #import "BaseTableViewCell.h"
 
 #define D3ModelCellHeight 150
+#define D3ModelCellIdentifier @"D3ModelCell"
 
 @interface D3ModelCell : BaseTableViewCell
 {

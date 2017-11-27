@@ -25,7 +25,7 @@
         
         CGFloat width = [UIScreen mainScreen].bounds.size.width;
         CGFloat height = 44;
-        CGFloat y = 20;
+        CGFloat y = msStateHeight;
         
         _title = [[UILabel alloc] initWithFrame:CGRectMake(0, y, width, height)];
         _title.textAlignment = NSTextAlignmentCenter;

@@ -19,6 +19,8 @@
     // Do any additional setup after loading the view.
     self.title = @"生成订单";
     self.tableView.mj_footer = nil;
+    
+    [self.tableView registerClass:[SubtitleCell class] forCellReuseIdentifier:SubtitleCellIdentifier];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -40,7 +42,7 @@
     if (section == 0) {
         return @"选择打印机(默认选择离我最近的):";
     } else if (section == 1) {
-        return @"打印耗时:";
+        return @"打印耗时(由模型决定):";
     } else if (section == 2) {
         return @"预计打印开始时间\n(具体以付款时选择的打印机预约到的时间为准):";
     } else if (section == 3) {
@@ -49,6 +51,17 @@
         return @"价格(20元/小时):";
     } else {
         return nil;
+    }
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        SubtitleCell *cell = [tableView dequeueReusableCellWithIdentifier:SubtitleCellIdentifier forIndexPath:indexPath];
+        [cell setTitle:@"新华科技大厦" subtitle:@"1203室"];
+        return cell;
+    } else {
+        return [self cellForRowAtIndexPath:indexPath tableView:tableView];
     }
 }
 

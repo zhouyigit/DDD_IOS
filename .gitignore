@@ -43,6 +43,7 @@ xcuserdata/
 # Pods/
 Pods
 *.xcworkspace
+*.lock
 
 # Carthage
 #

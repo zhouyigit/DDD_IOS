@@ -21,13 +21,13 @@
 
 -(void)initTitleButtons:(NSArray<NSString*>*)titles
 {
-    _top = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), 64)];
+    _top = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), msNavHeight)];
     _top.backgroundColor = [UIColor greenColor];
     [self.view addSubview:_top];
     
     _buttons = [NSMutableArray arrayWithCapacity:titles.count];
     for (int i=0; i<titles.count; i++) {
-        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2+100*(i-1), 20, 100, 44)];
+        UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2+100*(i-1), msStateHeight, 100, 44)];
         button.tag = i;
         [button setTitle:titles[i] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -51,7 +51,7 @@
 
 -(void)initRightButton:(NSString*)title target:(id)target sel:(SEL)sel
 {
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetWidth(_top.bounds)-64, 20, 64, 44)];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetWidth(_top.bounds)-64, msStateHeight, 64, 44)];
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [button addTarget:target action:sel forControlEvents:UIControlEventTouchUpInside];
@@ -60,7 +60,7 @@
 
 -(void)initLeftButton:(UIImage *)image target:(id)target sel:(SEL)sel
 {
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 20, 64, 44)];
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, msStateHeight, 64, 44)];
     [button setImage:image forState:UIControlStateNormal];
     button.backgroundColor = DebugColor;
     [button addTarget:target action:sel forControlEvents:UIControlEventTouchUpInside];
@@ -69,8 +69,8 @@
 
 -(void)initVCs
 {
-    self.automaticallyAdjustsScrollViewInsets = NO;//scrollview偏移20
-    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-64)];
+    self.automaticallyAdjustsScrollViewInsets = NO;//scrollview偏移
+    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, msNavHeight, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)-msNavHeight)];
     _scrollView.pagingEnabled = YES;
     _scrollView.contentSize = CGSizeMake(2*CGRectGetWidth(_scrollView.bounds), 0);
     _scrollView.showsVerticalScrollIndicator = NO;
